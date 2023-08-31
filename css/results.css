@@ -1,0 +1,70 @@
+body{
+  background-color: #eaf8ff;
+  background-image: url('../images/result_bg.jpg');
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.character{
+  width: 100%;                 /*화면이 줄어들때 캐릭터가 잘리는 것을 방지하고자 100%로설정*/
+  max-width: 600px;            /*화면이 커지면 최대 600px로 보일 수 있게끔 설정해준다*/
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.result{
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.result .box{
+  min-height: 70px;   /*화면이 줄어들 경우 최소한의 높이를 지정해주고자 min을 사용  */
+  background-color: white;
+  margin-bottom: 15px;
+  border-radius: 20px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.4;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 10px 30px 10px;
+}
+
+.result h3{
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.result .jobs{
+  height: 200px;
+  display: flex;       /*부모요소에 display=flex를 넣어주면 자식요소는 자동 수평정열로 만들어준다*/
+  gap: 10px;           /*자식요소 사이에 10px의 간격을 넣어준다*/
+}
+
+.result .job{
+  flex: 1;            /*같은 크기의 박스모양 2개를 만들경우 flex=1을(1:1의 비율) 넣어주고 부모 요소에 gap을 넣어 두 상자의 사이의 공간을 만들어준다*/
+  background-color: white;
+  background-image: url('../images/result_star.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ffe603;
+  border-radius: 20px;
+}
+.result .lecture img{
+  margin-bottom: 40px;
+  width: 100%;
+}
